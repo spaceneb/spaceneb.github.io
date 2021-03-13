@@ -1,4 +1,111 @@
+@font-face {font-family: "PixelarRegularW01-Regular";
+    src:url("fonts/PixelarRegularW01-Regular.ttf") format("truetype") /* chrome firefox opera Safari, Android, iOS 4.2+*/
+}
 body {
-	font-weight: 300;
-	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	font-family: PixelarRegularW01-Regular;
+	margin: 1em;
+	padding: 0;
+	background: rgb(200,200,200);
+	overflow: scroll;
+}
+
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+	color: #333;
+	text-decoration: none;
+}
+li:not(:last-child)::after {
+	content: " · ";
+}
+ul,
+li {
+	list-style: none;
+    padding: 0;
+    display: inline;
+    font-size: 1em;
+}
+footer {
+	position: fixed;
+ 	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	text-align: center;
+}
+.me {
+	border-radius: 50%;
+	width: 1em;
+	height: 1em;
+	display: inline;
+}
+
+.hvr-float {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out
+}
+
+.hvr-float:active,
+.hvr-float:focus,
+.hvr-float:hover {
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px)
+}
+
+::-webkit-scrollbar {
+	width: 16px
+}
+
+::-webkit-scrollbar:horizontal {
+	height: 17px
+}
+
+::-webkit-scrollbar-corner {
+	background: #dfdfdf
+}
+
+::-webkit-scrollbar-track {
+	background-image: url(track.svg)
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #c0c0c0;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:horizontal:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment {
+	display: block
+}
+
+::-webkit-scrollbar-button:vertical:start {
+	height: 17px;
+	background-image: url(buttons/button-up.svg)
+}
+
+::-webkit-scrollbar-button:vertical:end {
+	height: 17px;
+	background-image: url(buttons/button-down.svg)
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+	width: 16px;
+	background-image: url(buttons/button-left.svg)
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+	width: 16px;
+	background-image: url(buttons/button-right.svg)
 }
