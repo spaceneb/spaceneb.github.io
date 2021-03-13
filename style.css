@@ -17,15 +17,34 @@ a:active {
 	color: #333;
 	text-decoration: none;
 }
-li:not(:last-child)::after {
-	content: " · ";
-}
 ul,
 li {
 	list-style: none;
     padding: 0;
-    display: inline;
-    font-size: 1em;
+    font-size: 1.125em;
+}
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background: rgb(190,190,190);
+  overflow-x: hidden;
+  padding-left: 0.25em;
+}
+
+.main {
+  margin-left: 15%;
+  line-height: normal;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 footer {
 	position: fixed;
