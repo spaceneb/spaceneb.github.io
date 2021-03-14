@@ -131,11 +131,10 @@ li {
 }
 .sidenav {
   height: 100%;
-  width: 15%;
+  width: 25vw;
   position: fixed;
   z-index: 1;
   margin: 0;
-  padding: 0;
   top: 0;
   left: 0;
   background: rgb(190,190,190);
@@ -143,29 +142,31 @@ li {
   padding-left: 0.25em;
   border-right: 3px groove rgb(160,160,160);
 }
-
-.main {
-  margin-left: 15%;
-  line-height: normal;
+.text-container {
+  margin-left: 1em;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.main {
+  margin-left: 25vw;
+  line-height: normal;
 }
 footer {
 	position: fixed;
  	left: 0;
-  	bottom: 0;
-  	width: 100%;
-  	text-align: center;
-  background: rbg(200,200,200);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: rgb(200,200,200);
+  border-top: 3px groove rgb(160,160,160);
 }
 .me {
 	border-radius: 50%;
 	width: 1em;
 	height: 1em;
 	display: inline;
+}
+.break-word {
+  word-wrap: break-word;
 }
 
 .hvr-float {
