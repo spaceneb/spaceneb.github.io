@@ -1,0 +1,23 @@
+#search_882c9b06-0294-4745-ac2b-5ca0ab668504 {
+	padding: 0.5em;
+	border: 3px groove rgb(180,180,180);
+	background: rgb(190,190,190);
+	margin-bottom: 12px;
+}
+.search-icon {
+	background-image: url('search.png');
+	background-repeat: no-repeat;
+}
+#articles {
+	list-style-type: none;
+}
+#articles li {
+	border: 3px groove rgb(180,180,180);
+	margin-top: -1px;
+	background: rgb(190,190,190);
+	color: #000;
+	display: block;
+	width: 60vw;
+	padding: 0.25em;
+
+}

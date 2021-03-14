@@ -112,6 +112,9 @@ h1,h2 {
 h3,h4,h5,h6 {
 	font-family: 'Times Pixelated 24', 'Times New Roman', serif;
 }
+p, span, input {
+  font-family: 'Times Pixelated 16', 'Times New Roman', serif;
+}
 
 a,
 a:hover,
@@ -138,6 +141,7 @@ li {
   background: rgb(190,190,190);
   overflow-x: hidden;
   padding-left: 0.25em;
+  border-right: 3px groove rgb(160,160,160);
 }
 
 .main {
