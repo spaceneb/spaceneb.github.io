@@ -1,13 +1,116 @@
-@font-face {font-family: "silkscreen";
-    src:url("fonts/slkscr.ttf") format("truetype") /* chrome firefox opera Safari, Android, iOS 4.2+*/
+@font-face {
+    font-family: "Times Pixelated 16";
+    src: url(fonts/TIMES.TTF-16-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 16";
+    src: url(fonts/TIMESI.TTF-16-Italic.woff) format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 16";
+    src: url(fonts/TIMESBD.TTF-16-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 16";
+    src: url(fonts/TIMESBI.TTF-16-BoldItalic.woff) format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 24";
+    src: url(fonts/TIMES.TTF-24-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 24";
+    src: url(fonts/TIMESI.TTF-24-Italic.woff) format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 24";
+    src: url(fonts/TIMESBD.TTF-24-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 24";
+    src: url(fonts/TIMESBI.TTF-24-BoldItalic.woff) format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 32";
+    src: url(fonts/TIMES.TTF-32-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 32";
+    src: url(fonts/TIMESI.TTF-32-Italic.woff) format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 32";
+    src: url(fonts/TIMESBD.TTF-32-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: "Times Pixelated 32";
+    src: url(fonts/TIMESBI.TTF-32-BoldItalic.woff) format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap
 }
 body {
-	font-family: silkscreen;
+	-webkit-font-smoothing: none;
+	font-family: 'Times Pixelated 16', 'Times New Roman', serif;
 	margin: 1em;
 	padding: 0;
 	background: rgb(200,200,200);
 	overflow: scroll;
-	font-size: 14px;
+	font-size: 16px;
+	line-height: 1.3em;
+	cursor: url('cursor/arrow.cur'),default;
+	cursor: url('cursor/arrow.cur'),pointer;
+	cursor: url('cursor/ibeam.cur'),text;
+}
+h1,h2 {
+	font-family: 'Times Pixelated 32', 'Times New Roman', serif;
+}
+h3,h4,h5,h6 {
+	font-family: 'Times Pixelated 24', 'Times New Roman', serif;
 }
 
 a,
@@ -15,8 +118,7 @@ a:hover,
 a:link,
 a:visited,
 a:active {
-	color: #333;
-	text-decoration: none;
+	color: #000080;
 }
 ul,
 li {
@@ -128,4 +230,9 @@ footer {
 ::-webkit-scrollbar-button:horizontal:end {
 	width: 16px;
 	background-image: url(buttons/button-right.svg)
+}
+
+::selection {
+	background: #000080;
+	color: #fff;
 }
