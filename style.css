@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Times Pixelated 16";
-    src: url(fonts/TIMES.TTF-16-Regular.woff) format("woff");
+    src: url(assets/fonts/TIMES.TTF-16-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Times Pixelated 16";
-    src: url(fonts/TIMESI.TTF-16-Italic.woff) format("woff");
+    src: url(assets/fonts/TIMESI.TTF-16-Italic.woff) format("woff");
     font-weight: normal;
     font-style: italic;
     font-display: swap
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Times Pixelated 16";
-    src: url(fonts/TIMESBD.TTF-16-Bold.woff) format("woff");
+    src: url(assets/fonts/TIMESBD.TTF-16-Bold.woff) format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: "Times Pixelated 16";
-    src: url(fonts/TIMESBI.TTF-16-BoldItalic.woff) format("woff");
+    src: url(assets/fonts/TIMESBI.TTF-16-BoldItalic.woff) format("woff");
     font-weight: bold;
     font-style: italic;
     font-display: swap
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: "Times Pixelated 24";
-    src: url(fonts/TIMES.TTF-24-Regular.woff) format("woff");
+    src: url(assets/fonts/TIMES.TTF-24-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: "Times Pixelated 24";
-    src: url(fonts/TIMESI.TTF-24-Italic.woff) format("woff");
+    src: url(assets/fonts/TIMESI.TTF-24-Italic.woff) format("woff");
     font-weight: normal;
     font-style: italic;
     font-display: swap
@@ -48,7 +48,7 @@
 
 @font-face {
     font-family: "Times Pixelated 24";
-    src: url(fonts/TIMESBD.TTF-24-Bold.woff) format("woff");
+    src: url(assets/fonts/TIMESBD.TTF-24-Bold.woff) format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap
@@ -56,7 +56,7 @@
 
 @font-face {
     font-family: "Times Pixelated 24";
-    src: url(fonts/TIMESBI.TTF-24-BoldItalic.woff) format("woff");
+    src: url(assets/fonts/TIMESBI.TTF-24-BoldItalic.woff) format("woff");
     font-weight: bold;
     font-style: italic;
     font-display: swap
@@ -64,7 +64,7 @@
 
 @font-face {
     font-family: "Times Pixelated 32";
-    src: url(fonts/TIMES.TTF-32-Regular.woff) format("woff");
+    src: url(assets/fonts/TIMES.TTF-32-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap
@@ -72,7 +72,7 @@
 
 @font-face {
     font-family: "Times Pixelated 32";
-    src: url(fonts/TIMESI.TTF-32-Italic.woff) format("woff");
+    src: url(assets/fonts/TIMESI.TTF-32-Italic.woff) format("woff");
     font-weight: normal;
     font-style: italic;
     font-display: swap
@@ -80,7 +80,7 @@
 
 @font-face {
     font-family: "Times Pixelated 32";
-    src: url(fonts/TIMESBD.TTF-32-Bold.woff) format("woff");
+    src: url(assets/fonts/TIMESBD.TTF-32-Bold.woff) format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap
@@ -88,10 +88,13 @@
 
 @font-face {
     font-family: "Times Pixelated 32";
-    src: url(fonts/TIMESBI.TTF-32-BoldItalic.woff) format("woff");
+    src: url(assets/fonts/TIMESBI.TTF-32-BoldItalic.woff) format("woff");
     font-weight: bold;
     font-style: italic;
     font-display: swap
+}
+:root {
+	cursor: url('assets/arrow.cur'),default;
 }
 body {
 	-webkit-font-smoothing: none;
@@ -102,9 +105,6 @@ body {
 	overflow: scroll;
 	font-size: 16px;
 	line-height: 1.3em;
-	cursor: url('cursor/arrow.cur'),default;
-	cursor: url('cursor/arrow.cur'),pointer;
-	cursor: url('cursor/ibeam.cur'),text;
 }
 h1,h2 {
 	font-family: 'Times Pixelated 32', 'Times New Roman', serif;
@@ -197,7 +197,7 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-	background-image: url(track.svg)
+	background-image: url(assets/track.svg)
 }
 
 ::-webkit-scrollbar-thumb {
@@ -214,22 +214,22 @@ footer {
 
 ::-webkit-scrollbar-button:vertical:start {
 	height: 17px;
-	background-image: url(buttons/button-up.svg)
+	background-image: url(assets/buttons/button-up.svg)
 }
 
 ::-webkit-scrollbar-button:vertical:end {
 	height: 17px;
-	background-image: url(buttons/button-down.svg)
+	background-image: url(assets/buttons/button-down.svg)
 }
 
 ::-webkit-scrollbar-button:horizontal:start {
 	width: 16px;
-	background-image: url(buttons/button-left.svg)
+	background-image: url(assets/buttons/button-left.svg)
 }
 
 ::-webkit-scrollbar-button:horizontal:end {
 	width: 16px;
-	background-image: url(buttons/button-right.svg)
+	background-image: url(assets/buttons/button-right.svg)
 }
 
 ::selection {
