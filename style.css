@@ -1,12 +1,13 @@
-@font-face {font-family: "PixelarRegularW01-Regular";
-    src:url("fonts/PixelarRegularW01-Regular.ttf") format("truetype") /* chrome firefox opera Safari, Android, iOS 4.2+*/
+@font-face {font-family: "silkscreen";
+    src:url("fonts/slkscr.ttf") format("truetype") /* chrome firefox opera Safari, Android, iOS 4.2+*/
 }
 body {
-	font-family: PixelarRegularW01-Regular;
+	font-family: silkscreen;
 	margin: 1em;
 	padding: 0;
 	background: rgb(200,200,200);
 	overflow: scroll;
+	font-size: 14px;
 }
 
 a,
