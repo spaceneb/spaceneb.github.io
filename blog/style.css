@@ -4,10 +4,6 @@
 	background: rgb(190,190,190);
 	margin-bottom: 12px;
 }
-.search-icon {
-	background-image: url('search.png');
-	background-repeat: no-repeat;
-}
 #articles {
 	list-style-type: none;
 }
